@@ -37,6 +37,7 @@ public class PlayerScript : MonoBehaviour
         int cardValue = deckScript.DealCard(hand[cardIndex].GetComponent<CardScript>());
         // Show card on game screen
         hand[cardIndex].GetComponent<Renderer>().enabled = true;
+
         // Add card value to running total of hand
         handValue += cardValue;
         // If value is 1, it is an ace
